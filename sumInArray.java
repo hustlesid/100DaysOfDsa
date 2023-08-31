@@ -9,7 +9,7 @@ class solution{
         int high = array.length-1;
         while(low<high){
             if((array[low] +  array[high])==target){
-                System.out.print("pair found "+ array[low] +" "+ array[high]);
+                System.out.print("pair found "+ array[low]  +" "+ array[high]);
                 return;
             }
             if((array[low] +  array[high])<target){
