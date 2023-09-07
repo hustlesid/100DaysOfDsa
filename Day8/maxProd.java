@@ -1,4 +1,4 @@
-package Day7.Day8;
+package Day8;
 
 public class maxProd {
 
