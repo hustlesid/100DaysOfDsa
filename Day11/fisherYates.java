@@ -12,7 +12,7 @@ public class fisherYates {
     public static void shuffler(int A[]){
         for(int i =A.length-1;i>=1;i--){
             Random random = new Random();
-            int j = random.nextInt(i+0);
+            int j = random.nextInt(i);
             swap(A, i, j);
         }
     }
