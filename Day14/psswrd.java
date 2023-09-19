@@ -1,34 +1,14 @@
 package Day14;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+
 
 class Result {
 
-    /*
-     * Complete the 'minimumNumber' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts following parameters:
-     *  1. INTEGER n
-     *  2. STRING password
-     */
+   
 
     public static int minimumNumber(int n, String password) {
-    // Return the minimum number of characters to make the password strong
-        // String numbers = "0123456789";
-        // String lower_case = "abcdefghijklmnopqrstuvwxyz";
-        // String upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        // String special_characters = "!@#$%^&*()-+";
+
         int upper =0;
         int lower=0;
         int special=0;
@@ -44,19 +24,30 @@ class Result {
             }else{
                 special++;
             }
-            if(upper==0){
+            
+        }
+        if(number == 0){
+            counter++;
+        }
+        if(upper==0){
                 counter++;
             }
-            if(lower==0){
+        if(lower==0){
                 counter++;
-            }if(special==0){
+        }
+        if(special==0){
                 counter++;
-            }if((password.length()+counter)<6){
+            }
+        if((password.length()+counter)<6){
                 return 6-(password.length());
-            }else{
+            }
+        if(counter==0){
+            return 0;
+        }
+        else{
                 return counter;
             }
-        }
+        
         
     }
 
