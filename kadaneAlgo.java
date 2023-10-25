@@ -9,7 +9,7 @@
 
             if(currentsum>maxsum){
                 maxsum=currentsum;
-            }if(currentsum<maxsum){
+            }if(currentsum<0){
                 currentsum = 0;
             }
         } return maxsum;
